@@ -135,5 +135,70 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
     </header>
+//     <header className="sticky top-0 z-40 w-full border-b bg-white dark:border-b-slate-700 dark:bg-background">
+//   <NavigationMenu>
+//     <NavigationMenuList className="container mx-auto flex h-14 w-full items-center justify-between px-4">
+//       {/* Logo */}
+//       <NavigationMenuItem>
+//         <a
+//           href="/"
+//           rel="noopener noreferrer"
+//           className="flex items-center text-xl font-bold text-purple-600"
+//         >
+//           iOS Customer Support
+//         </a>
+//       </NavigationMenuItem>
+
+//       {/* Mobile Menu */}
+//       <div className="flex items-center md:hidden">
+//         <ModeToggle />
+//         <Sheet open={isOpen} onOpenChange={setIsOpen}>
+//           <SheetTrigger>
+//             <Menu className="h-5 w-5" />
+//           </SheetTrigger>
+//           <SheetContent side="left">
+//             <SheetHeader>
+//               <SheetTitle className="text-xl font-bold">
+//                 iOS Customer Support
+//               </SheetTitle>
+//             </SheetHeader>
+//             <nav className="mt-4 flex flex-col items-center gap-2">
+//               {routeList.map(({ href, label }) => (
+//                 <a
+//                   key={label}
+//                   href={href}
+//                   rel="noopener noreferrer"
+//                   onClick={() => setIsOpen(false)}
+//                   className={buttonVariants({ variant: "ghost" })}
+//                 >
+//                   {label}
+//                 </a>
+//               ))}
+//             </nav>
+//           </SheetContent>
+//         </Sheet>
+//       </div>
+
+//       {/* Desktop Menu */}
+//       <nav className="hidden md:flex gap-4">
+//         {routeList.map(({ href, label }, index) => (
+//           <a
+//             key={index}
+//             href={href}
+//             rel="noopener noreferrer"
+//             className={buttonVariants({ variant: "ghost" })}
+//           >
+//             {label}
+//           </a>
+//         ))}
+//       </nav>
+
+//       <div className="hidden md:flex items-center gap-4">
+//         <ModeToggle />
+//       </div>
+//     </NavigationMenuList>
+//   </NavigationMenu>
+// </header>
+
   );
 };

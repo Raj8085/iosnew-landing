@@ -37,7 +37,7 @@
 //       </Card> */}
 
 //       {/* Team */}
-//       {/* <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+//        <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
 //         <CardHeader className="mt-8 flex justify-center items-center pb-2">
 //           <img
 //             src="https://i.pravatar.cc/150?img=58"
@@ -106,7 +106,7 @@
 //             </a>
 //           </div>
 //         </CardFooter>
-//       </Card> */}
+//       </Card> 
 //         <img src="/Housing-pop-up.jpg"/>
 
 //       <img src="/ios-support1-removebg-preview.png" alt="" className="w-[20rem] h-[20rem] ml-40 mt-20"/>
@@ -175,11 +175,13 @@
 //   );
 // };
 
+
+
 import * as Dialog from "@radix-ui/react-dialog";
 
 export const HeroCards = () => {
   return (
-    <div className="lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className="lg:flex flex-row flex-wrap gap-8 relative w-100% h-100%">
       {/* Dialog Popup */}
       <Dialog.Root defaultOpen>
         <Dialog.Portal>
@@ -207,7 +209,7 @@ export const HeroCards = () => {
       </Dialog.Root>
 
       {/* Other Cards */}
-      <img src="/ios-support1-removebg-preview.png" alt="" className="w-[20rem] h-[20rem] ml-40 mt-20" />
+      <img src="/ios-support1-removebg-preview.png" alt="" className="w-80 h-80 lg:ml-20 lg:mt-20" />
     </div>
   );
 };

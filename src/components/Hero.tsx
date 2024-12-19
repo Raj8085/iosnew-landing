@@ -6,7 +6,7 @@ import { DialogDemo } from "./Form/FormComponent";
 
 export const Hero = () => {
   return (
-    <section className="container mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center py-10 md:py-20 lg:py-32 gap-10 px-4">
+    <section className="container mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center py-10 md:py-20x lg:py-32 gap-10 px-4">
       {/* Text Section */}
       <div className="text-center lg:text-start space-y-6">
         <main className="text-4xl md:text-5xl lg:text-6xl font-bold">
@@ -37,7 +37,8 @@ export const Hero = () => {
 
       {/* Hero Cards Section */}
       <div className="z-10">
-        <HeroCards />
+        {/* <HeroCards /> */}
+        <HeroCards/>
       </div>
 
       {/* Shadow Effect */}
