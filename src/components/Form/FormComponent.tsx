@@ -115,14 +115,14 @@ export function DialogDemo() {
   //   deviceType: "",
   // })
   // Handle input changes
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }))
   }
-  const handleChange1 = (e) => {
+  const handleChange1 = (e: { target: { name: string; value: string} }) => {
     const { name, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
@@ -132,7 +132,7 @@ export function DialogDemo() {
 
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     // Perform form submission logic here
     console.log("Form Submitted:", formData)
