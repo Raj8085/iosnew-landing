@@ -122,13 +122,13 @@ export function DialogDemo() {
       [name]: value,
     }))
   }
-  const handleChange1 = (e: { target: { name: string; value: string} }) => {
-    const { name, value } = e.target
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }))
-  }
+  // const handleChange1 = (e: { target: { name: string; value: string} }) => {
+  //   const { name, value } = e.target
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }))
+  // }
 
 
   // Handle form submission
