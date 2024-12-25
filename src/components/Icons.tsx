@@ -662,3 +662,74 @@ export const MagnifierIcon = () => {
     </svg>
   );
 };
+
+
+import { ReactElement } from "react";
+
+export const FilmIcon = (): ReactElement => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="w-8 h-8 text-indigo-600"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M4 4h16v16H4V4zm8 0v16"
+    />
+  </svg>
+);
+
+export const MusicNoteIcon = (): ReactElement => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="w-8 h-8 text-teal-600"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M9 19V5l12-2v14"
+    />
+  </svg>
+);
+
+export const GamepadIcon = (): ReactElement => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="w-8 h-8 text-red-600"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 4.354A4.015 4.015 0 0015.646 8H20a2 2 0 012 2v4a2 2 0 01-2 2h-4.354A4.015 4.015 0 0012 19.646M8 4a4 4 0 100 8m0 0H4m8-8H8"
+    />
+  </svg>
+);
+
+export const PodcastIcon = (): ReactElement => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="w-8 h-8 text-purple-600"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 4.354a4.015 4.015 0 013.646 3.646H20a2 2 0 012 2v4a2 2 0 01-2 2h-4.354a4.015 4.015 0 01-3.646 3.646M8 4a4 4 0 000 8M4 12H8m8-8h4"
+    />
+  </svg>
+);

@@ -158,7 +158,7 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/leopoldo-miranda/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            iOS Customer Support
+            Entertaiment Customer Support
           </a>
         </h3>
       </section>

@@ -12,15 +12,14 @@ export const Cta = () => {
             Submit
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              YOUR iOS{" "}
+              YOUR Entertaiment{" "}
             </span>
             Query
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            beatae. Ipsa tempore ipsum iste quibusdam illum ducimus eos. Quasi,
-            sed!
-          </p>
+  Discover the latest in streaming, gaming, and music entertainment. From binge-worthy shows and blockbuster movies to trending podcasts and immersive gaming experiences, we've got everything you need to stay entertained. Your favorite content is just a click away!
+</p>
+
         </div>
         <DialogDemo/>
 

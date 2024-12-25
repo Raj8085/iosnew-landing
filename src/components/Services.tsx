@@ -1,75 +1,58 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
+const Features = () => {
+  const features = [
+    {
+      title: "Enjoy on your TV",
+      description:
+        "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+      icon: "📺",
+    },
+    {
+      title: "Download your shows to watch offline",
+      description:
+        "Save your favourites easily and always have something to watch.",
+      icon: "⬇️",
+    },
+    {
+      title: "Watch everywhere",
+      description:
+        "Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.",
+      icon: "📱",
+    },
+    {
+      title: "Create profiles for kids",
+      description:
+        "Send kids on adventures with their favourite characters in a space made just for them — free with your membership.",
+      icon: "👧",
+    },
+  ];
 
-interface ServiceProps {
-  title: string;
-  description: string;
-  icon: JSX.Element;
-}
-
-const serviceList: ServiceProps[] = [
-  {
-    title: "iOS Updates",
-    description:
-      "Assistance with updating or troubleshooting iOS versions.",
-    icon: <ChartIcon />,
-  },
-  {
-    title: "Security",
-    description:
-      "Help with Apple ID, two-factor authentication, and privacy.",
-    icon: <WalletIcon />,
-  },
-  // {
-  //   title: "Task Automation",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-  //   icon: <MagnifierIcon />,
-  // },
-];
-
-export const Services = () => {
   return (
-    <section className="container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Services
-            </span>
-          </h2>
-
-          <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
-          </p>
-
-          <div className="flex flex-col gap-8">
-            {serviceList.map(({ icon, title, description }: ServiceProps) => (
-              <Card key={title}>
-                <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-                  <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-                    {icon}
-                  </div>
-                  <div>
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription className="text-md mt-2">
-                      {description}
-                    </CardDescription>
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+    <div
+      // Radial gradient background for a fun, entertainment vibe
+      className="
+        grid grid-cols-1 gap-6 px-4 py-12 text-white 
+        bg-[radial-gradient(ellipse_at_center,_#fca5a5,_#ec4899)] 
+        md:grid-cols-2 lg:grid-cols-4
+      "
+    >
+      {features.map((feature, index) => (
+        <div
+          key={index}
+          // Semi-transparent card with a hover scale effect
+          className="
+            flex transform flex-col items-start 
+            rounded-lg bg-white/10 p-6 shadow-lg 
+            backdrop-blur-md transition-transform duration-300 
+            hover:scale-105
+          "
+        >
+          <div className="mb-4 text-4xl">{feature.icon}</div>
+          <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
+          <p className="text-sm">{feature.description}</p>
         </div>
-
-        <img
-          src={cubeLeg}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="About services"
-        />
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
+
+export default Features;

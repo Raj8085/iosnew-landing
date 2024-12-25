@@ -213,7 +213,7 @@ export function DialogDemo() {
             </div>
 
             {/* Query Type Select Field */}
-            <div className="grid grid-cols-4 items-center gap-4">
+            {/* <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="queryType" className="text-right">
                 Query Type
               </Label>
@@ -232,8 +232,8 @@ export function DialogDemo() {
                 <option value="iCloud Support">iCloud Support</option>
                 <option value="Apple ID">Apple ID</option>
               </select>
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
+            </div> */}
+            {/* <div className="grid grid-cols-4 items-center gap-4">
               <Label htmlFor="queryType" className="text-right">
                 Device Type
               </Label>
@@ -251,7 +251,7 @@ export function DialogDemo() {
                 <option value="Apple Issues">Apple watch</option>
               
               </select>
-            </div>
+            </div> */}
           </div>
           <DialogFooter>
             <Button type="submit">Submit</Button>
