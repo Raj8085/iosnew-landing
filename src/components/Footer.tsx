@@ -155,12 +155,26 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
+            // href="https://www.linkedin.com/in/leopoldo-miranda/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             Entertaiment Customer Support
           </a>
         </h3>
+        <p className="font-bold mt-5">Call Now For Expert Support{" "}</p>
+
+<p className="">
+  <a
+    href="tel:+10865449042"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "tel:+10865449042";
+    }}
+    className="text-green-200 hover:underline"
+  >
+    +108-654-49042
+  </a>
+</p>
       </section>
     </footer>
   );

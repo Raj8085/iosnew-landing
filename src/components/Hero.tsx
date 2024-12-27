@@ -115,7 +115,7 @@ export const Hero = () => {
     <div className="relative">
       {/* Background Image */}
       <img
-        src="/IN-en-20241216-TRIFECTA-perspective_915a9055-68ad-4e81-b19a-442f1cd134dc_small.jpg"
+        src="/EntertainmentImage.jpg"
         alt="Hero Background"
         className="w-full h-screen object-cover"
       />
@@ -127,7 +127,7 @@ export const Hero = () => {
 
       {/* Highlighted Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center md:px-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
+        <h1 className="text-5xl sm:text-4xl md:text-6xl lg:text-6xl font-bold text-gray-300 drop-shadow-lg">
           Entertainment Customer Support
         </h1>
         <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl">
@@ -139,8 +139,17 @@ export const Hero = () => {
   <DialogDemo />
 </div>
     </div>
+    <div className="mt-10 flex justify-center w-full">
+          <img
+            src="/Housing-pop-up.jpg"
+            alt="Popup"
+            className="w-64 h-auto md:w-72 lg:w-80 rounded-lg shadow-lg"
+          />
+        </div>
+
         </p>
       </div>
+      
      <PopComponent/>
     </div>
   );

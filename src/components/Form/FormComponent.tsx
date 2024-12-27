@@ -150,7 +150,7 @@ export function DialogDemo() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="w-50 md:w-1/3">Make An Inquiry</Button>
+        <Button className="w-50 md:w-1/3 ml-5">Make An Inquiry</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
